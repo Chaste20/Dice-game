@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="roll()">
+    <div class="dice-role-container">
+        <div class = "header">
+            <h1 >ROLL THE DICE</h1>
+            <div class="dice-wrapper">
+                <img src=""  id="die-1">
+            </div>
+        </div>
+        <h2>Score: <span id="score"></span></h2>
+        <h3>Selected Variable:<br><span id ="selected"></span><span id="countdown"></span></h3>
+    
+        <div class="box">
+            <button onclick="throwDice(1)" id="dice-btn">1</button>
+            <button onclick="throwDice(2)" id="dice-btn">2</button>
+            <button onclick="throwDice(3)" id="dice-btn">3</button>
+            <button onclick="throwDice(4)" id="dice-btn">4</button>
+            <button onclick="throwDice(5)" id="dice-btn">5</button>
+            <button onclick="throwDice(6)" id="dice-btn">6</button>
+        </div>
+
+<!--h4> Dice will roll in : <span id = "timer"></span> </h4>             
+            <h5> Loading! Game will start in a few second! </h5>--> 
+    
+    </div>
+    
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>

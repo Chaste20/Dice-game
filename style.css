@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* background: linear-gradient(
+        #443f3f
+    ) 0 100% no-repeat; */
+    /* background-size: 100%; */
+    /* background-color: gray; */
+}
+.dice-role-container{
+    margin: 2em;
+    padding: 2em;
+    border-radius: 10px;
+    width: 50%;
+    background-color:rgb(182, 223, 223);
+}
+h1{
+    text-align: center;
+    color: #11305e;   
+}
+h2, h4{
+    padding-bottom: 1em;
+    /* text-align: right; */
+}
+.countdown{
+    color: green;
+    font-weight: bold;
+}
+
+.box {
+    display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+
+}
+.dice-wrapper{
+    /* width: 90%; */
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    font-size: 16px;
+    /* margin: 30px 0; */
+    font-weight: 500;
+}
+button{
+    background-color: #f58216;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+button:hover{
+    opacity: 1;
+}
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    .box {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);    
+    }
+}
+
+/* .box :first-child {
+    align-self: center;
+} */
+
+/* button {
+box-shadow:  0 15px 25px rgba(50,50,50,0.15);
+font-family: "Poppins",sans-serif;
+border-radius: 8px;
+align-items: center;
+border-width: 50px;
+border-radius: 8px;
+padding: 50px;
+align-content: center;
+} */
+/* button2 {
+    box-shadow:  0 15px 25px rgba(50,50,50,0.15);
+    font-family: "Poppins",sans-serif;
+    border-radius: 8px;
+    align-items: center;
+    border-width: 50px;
+    border-radius: 8px;
+    padding: 50px;
+    align-content: center;
+} */
+    /* button3 {
+        box-shadow:  0 15px 25px rgba(50,50,50,0.15);
+        font-family: "Poppins",sans-serif;
+        border-radius: 8px;
+        align-items: center;
+        border-width: 50px;
+        border-radius: 8px;
+        padding: 50px;
+        align-content: center;
+        }
+        button4 {
+            box-shadow:  0 15px 25px rgba(50,50,50,0.15);
+            font-family: "Poppins",sans-serif;
+            border-radius: 8px;
+            align-items: center;
+            border-width: 50px;
+            border-radius: 8px;
+            padding: 50px;
+            align-content: center;
+            }
+            button5 {
+                box-shadow:  0 15px 25px rgba(50,50,50,0.15);
+                font-family: "Poppins",sans-serif;
+                border-radius: 8px;
+                align-items: center;
+                border-width: 50px;
+                border-radius: 8px;
+                padding: 50px;
+                align-content: center;
+                }
+                button6 {
+                    box-shadow:  0 15px 25px rgba(50,50,50,0.15);
+                    font-family: "Poppins",sans-serif;
+                    border-radius: 8px;
+                    align-items: center;
+                    border-width: 50px;
+                    border-radius: 8px;
+                    padding: 50px;
+                    align-content: center;
+                    } */
+                    
+/* .container{
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #161515;
+    box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+} */
